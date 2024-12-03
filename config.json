@@ -1,9 +1,10 @@
 {
   "OPENDATACAM_VERSION": "3.0.2",
-  "PATH_TO_YOLO_DARKNET" : "/home/xactai/opendatacam_native/darknet",
-  "VIDEO_INPUT": "remote_cam",
-  "NEURAL_NETWORK": "yolov4-tiny",
+  "PATH_TO_YOLO_DARKNET" : "/home/xactai/shakes/opendatacam_native/darknet",
+  "VIDEO_INPUT": "file",
+  "NEURAL_NETWORK": "yolov4",
   "VIDEO_INPUTS_PARAMS": {
+  "fps": "30.0",
     "file": "/home/xactai/Videos/demo.mp4",
     "usbcam": "v4l2src device=/dev/video0 ! video/x-raw, framerate=30/1, width=640, height=360 ! videoconvert ! appsink",
     "raspberrycam": "nvarguscamerasrc ! video/x-raw(memory:NVMM),width=1280, height=720, framerate=30/1, format=NV12 ! nvvidconv ! video/x-raw, format=BGRx, width=640, height=360 ! videoconvert ! video/x-raw, format=BGR ! appsink",
