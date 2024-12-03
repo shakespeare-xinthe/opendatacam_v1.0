@@ -4,16 +4,17 @@ export function evaluateCSSVariable(color) {
 }
 
 export function getCounterColor(colorLabel) {
+  
   let color = null;
 
   color = window.CONFIG.COUNTER_COLORS[colorLabel];
 
-  if (color) {
+  if(color) {
     return color;
+  } else {
+    // Maybe if colors have been modified and old recording are in DB, we need to render a default color
+    return "#000";
   }
-  // Maybe if colors have been modified and old recording are in DB, we need to render a default
-  // color
-  return '#AEAEAE';
 }
 
 export function getAvailableCounterColors() {

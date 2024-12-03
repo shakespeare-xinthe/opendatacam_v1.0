@@ -1,48 +1,49 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import axios from 'axios';
 
-let LazyLog;
-let ScrollFollow;
+var LazyLog;
+var ScrollFollow;
 
 class Console extends Component {
+
   constructor(props) {
     super(props);
 
     this.state = {
-      onClient: false,
-    };
+      onClient: false
+    }
+
   }
 
   componentDidMount() {
-    this.setState({
-      onClient: true,
-    });
+      this.setState({
+        onClient: true
+      })
 
-    LazyLog = require('react-lazylog').LazyLog;
-    ScrollFollow = require('react-lazylog').ScrollFollow;
+      LazyLog = require('react-lazylog').LazyLog;
+      ScrollFollow = require('react-lazylog').ScrollFollow;
   }
 
-  render() {
+  render () {
     return (
-      <>
-        {this.state.onClient
-            && (
+        <>
+        {this.state.onClient &&
             <ScrollFollow
-              startFollowing
+              startFollowing={true}
               render={({ follow, onScroll }) => (
-                <LazyLog
-                  url="/console"
-                  stream
-                  follow={follow}
-                  onScroll={onScroll}
-                  overscanRowCount={300}
-                />
+                  <LazyLog 
+                    url="/console" 
+                    stream 
+                    follow={follow} 
+                    onScroll={onScroll} 
+                    overscanRowCount={300}
+                  />
               )}
             />
-            )}
-      </>
-    );
+        }
+        </>
+    )
   }
 }
 
-export default Console;
+export default Console

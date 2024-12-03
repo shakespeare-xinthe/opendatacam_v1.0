@@ -1,17 +1,19 @@
-/* eslint-disable no-console */
+
 
 class Logger {
-  constructor() {
-    this.debug = false;
-  }
-
-  log(message) {
-    if (this.debug) {
-      console.log(message);
+    constructor () {
+        this.debug = false
     }
-  }
+
+    log(message) {
+        if(this.debug) {
+            console.log(message);
+        }
+    }
 }
 
-const LoggerInstance = new Logger();
 
-module.exports = LoggerInstance;
+
+var LoggerInstance = new Logger()
+
+module.exports = LoggerInstance
