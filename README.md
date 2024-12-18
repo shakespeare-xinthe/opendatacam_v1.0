@@ -139,7 +139,11 @@ npm run start
 
 ### Running the Application (Docker)
 
-WIP
+- Follow the "execution_commands_opendatacam.txt" file for running the application in Docker
+
+[click here for execution commands](documentation/execution_commands_opendatacam)
+
+[click here for Docker file](documentation/opendatacam_Dockerfile.tar)
 
 ## Modificartions for Configuring FPS through Application
 - This guide outlines the steps required to modify Darknet to control the frame rate (FPS) for video input and integrate it with OpenDataCam using the YOLOv4 and YOLOv4-tiny model. By following these steps, you can set the FPS to any desired value (e.g., 30 FPS) and run Darknet accordingly.
