@@ -34,9 +34,9 @@ The quickest way to get started with OpenDataCam is to use the existing Docker I
 
 - You will need Docker and Docker-Compose installed. 
 - If you want to run OpenDataCam on a NVIDIA GPU you will additonally need
-  - [Nvidia CUDA 11 and cuDNN 8](https://developer.nvidia.com/cuda-downloads)
-  - [Nvidia Container toolkit installed](https://github.com/NVIDIA/nvidia-docker)
-  - You also need to install `nvidia-container-runtime`
+- [Nvidia CUDA 11 and cuDNN 8](https://developer.nvidia.com/cuda-downloads)
+- [Nvidia Container toolkit installed](https://github.com/NVIDIA/nvidia-docker)
+- You also need to install `nvidia-container-runtime`
 - To run OpenDataCam on a NVIDIA Jetson device you will need [Jetpack 5.x](https://developer.nvidia.com/embedded/jetpack-sdk-512).
 - [Node.js 12.22.9](https://nodejs.org/en/download/package-manager)
 - [npm 8.5.1](https://www.npmjs.com/package/download)
